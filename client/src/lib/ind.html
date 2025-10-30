@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <title>Ola AI Studio - Where Creativity Meets Elegance</title>
+    <meta
+      name="description"
+      content="Ola AI Studio is a premium creative brand offering graphic design, web development, AI video creation, and photography services. Discover where creativity meets elegance."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<script>
+  function payWithPaystack(amount, plan) {
+    let handler = PaystackPop.setup({
+      key: " pk_live_3233bed6496ccbc08bd552dc16e381f7683e0be3", // Replace this line
+      email: "customer@email.com",
+      amount: amount * 100,
+      currency: "NGN",
+      metadata: { custom_fields: [{ display_name: "Plan", value: plan }] },
+      callback: function (response) {
+        alert(`Payment for ${plan} complete! Ref: ` + response.reference);
+      },
+    });
+    handler.openIframe();
+  }
+</script>
+<script>
+  function initializePaystack(email, amount, plan, callback) {
+    let handler = PaystackPop.setup({
+      key: "pk_live_3233bed6496ccbc08bd552dc16e381f7683e0be3",
+      email: email,
+      amount: amount * 100,
+      currency: "NGN",
+      metadata: { custom_fields: [{ display_name: "Plan", value: plan }] },
+      callback: callback,
+      onClose: function () {
+        console.log("window closed");
+      },
+    });
+    handler.openIframe();
+  }
+</script>

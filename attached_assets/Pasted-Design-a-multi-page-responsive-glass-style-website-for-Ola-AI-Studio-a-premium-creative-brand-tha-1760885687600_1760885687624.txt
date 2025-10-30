@@ -1,0 +1,89 @@
+Design a multi-page, responsive, glass-style website for Ola AI Studio, a premium creative brand that’s a division of Ola Digital Concepts.
+
+🔹 Brand Identity
+
+Name: Ola AI Studio
+
+Tagline: “Where Creativity Meets Elegance”
+
+Colors: White and Purple theme with light/dark mode toggle
+
+Style: Glassmorphism + Minimalism — elegant, futuristic, soft glow, and smooth motion.
+
+Font style: Clean sans-serif (Inter, Poppins, or similar).
+
+🔹 Site Structure (Multi-Page)
+
+Home (index.html)
+
+Hero section with animated text “Where Creativity Meets Elegance.”
+
+CTA button: “Let’s Connect.”
+
+Background: consistent Unsplash glassy background image.
+
+About (about.html)
+
+Header: “About Ola AI Studio.”
+
+Section describing the studio as an elite creative hub merging art and AI.
+
+Services (services.html)
+
+Header: “Our Services.”
+
+List offerings:
+
+Graphic & Logo Design
+
+Website Design & No-Code App Development
+
+AI Video & Image Creation
+
+Photography & Corporate Brand Identity
+
+Portfolio (portfolio.html)
+
+Header: “Our Portfolio.”
+
+Grid of 3–6 sample projects with images and hover effects.
+
+Contact (contact.html)
+
+Header: “Get in Touch.”
+
+Contact form (name, email, message).
+
+CTA: “Send Message.”
+
+🔹 Design & UI / UX Requirements
+
+Use consistent glass background on all pages.
+
+Subtle and elegant animations: smooth fade-in and slide transitions.
+
+Buttons and links radiate gently when hovered or touched.
+
+Navigation bar is translucent, centered, and shared across all pages.
+
+Footer includes copyright and brand credits.
+
+Add a light/dark toggle in navigation (☀️ / 🌙).
+
+All pages should adapt beautifully on mobile and desktop (responsive).
+
+🔹 Technical
+
+Technologies: HTML5, CSS3, JavaScript (no backend).
+
+CSS includes glassmorphic effects, blur, and purple glow.
+
+Use smooth transitions (transition: all 0.4s ease).
+
+Optional: Animate hero text with slight floating motion.
+
+Add a soft shadow and blur to containers (backdrop-filter: blur(10px)).
+
+🔹 Goal
+
+Create a visually elegant, futuristic portfolio website that showcases Ola AI Studio’s expertise in creative design, AI visuals, and digital artistry. It should feel premium, minimalist, and immersive — like creativity itself lives behind glass.

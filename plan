@@ -1,0 +1,20 @@
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<script>
+function payWithPaystack(amount, plan){
+  let handler = PaystackPop.setup({
+    key: 'YOUR_PUBLIC_KEY', // Replace this line
+    email: 'customer@email.com',
+    amount: amount * 100,
+    currency: 'NGN',
+    metadata: { custom_fields: [{ display_name: "Plan", value: plan }] },
+    callback: function(response){
+      alert(`Payment for ${plan} complete! Ref: ` + response.reference);
+    }
+  });
+  handler.openIframe();
+}
+</script>
+<button onclick="payWithPaystack(1000, 'Basic')">Pay for Basic Plan</button>
+<a href="https://paystack.shop/pay/9myv1azrad">
+  <button>Buy Now</button>
+</a>
